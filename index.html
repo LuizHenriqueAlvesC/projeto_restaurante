@@ -13,22 +13,22 @@
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    <header class="navbar navbar-expand-lg sticky-top p-4">
+    <header class="navbar navbar-expand-lg sticky-top p-4" id="cabecalho">
         <div class="container">
-            <h1 class="navbar-brand m-0">Nome do restaurante</h1>
+            <h1 class="navbar-brand m-0 section-title">Nome do restaurante</h1>
             <button class="navbar-toggler">
                 <span class="navbar-toggler-icon" data-bs-toggle="collapse" data-bs-target="#menu-navegacao"></span>
             </button>
             <nav class="navbar-collapse collapse justify-content-end" id="menu-navegacao">
                 <ul class="nav nav-pills d-block d-md-flex">
                     <li class="nav-item fw-bold">
-                        <a href="" class="nav-link active">
+                        <a href="#sobre-o-restaurante" class="nav-link">
                             <i class="bi bi-house-door me-1"></i>
                             Sobre o restaurante
                         </a>
                     </li>
                     <li class="nav-item fw-bold">
-                        <a href="" class="nav-link">
+                        <a href="#eventos" class="nav-link">
                             <i class="bi bi-calendar-check me-1"></i>
                             Eventos
                         </a>
@@ -49,27 +49,183 @@
             </nav>
         </div>
     </header>
-    <section id="sobre0o-restaurante">
-        <div class="carousel slide" data-bs-ride="carousel" id="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active" data-bs-interval="3000">
-                    <img src="images/slides/slide1.png" alt="Foto do espaçp interno do restaurante">
+    <div data-bs-spy="scroll" data-bs-target="#cabecalho">
+        <section id="sobre-o-restaurante">
+            <div class="carousel slide" data-bs-ride="carousel" id="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="3000">
+                        <img src="images/slides/slide1.png" alt="Foto do espaço interno do restaurante">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="images/slides/slide2.png" alt="Duas taças de vinho">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="images/slides/slide3.png" alt="Uma mesa com comida">
+                    </div>
                 </div>
-                <div class="carousel-item" data-bs-interval="3000">
-                    <img src="images/slides/slide2.png" alt="Duas taças de vinho">
-                </div>
-                <div class="carousel-item" data-bs-interval="3000">
-                    <img src="images/slides/slide3.png" alt="Uma mesa com comida">
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carousel" class="active" data-bs-slide-to="0"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon"></span>
-            </button>
-            <button class="carousel-control-next-icon" type="button" data-bs-target="#carousel" data-bs-slide="next">
-                <span class="carousel-control-next-icon"></span>
-            </button>
-        </div>
-    </section>
+            <div class="pt-5 pb-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <img src="images/restaurante.jpg" class="d-block w-100 rounded" alt="Foto do espaço interno do restaurante">
+                        </div>
+                        <div class="col-md-7">
+                            <h2 class="section-title">Sobre <span class="text-colored">o restaurante</span></h2>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto dolorem aliquam ullam asperiores doloribus debitis voluptates omnis, fugiat cupiditate neque, adipisci qui? Ea iusto sunt quia repudiandae iste dolor enim.
+                            </p>
+                            <h3 class="section-title">Sobre <span class="text-colored">o espaço</span></h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint totam a alias corporis nihil tenetur magnam maiores quibusdam praesentium! Numquam laborum sit praesentium nihil ullam non aperiam eius nemo ipsam.</p>
+                            <ul>
+                                <li>Item 1</li>
+                                <li>Item 2</li>
+                                <li>Item 3</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="eventos" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center">Para todas <span class="text-colored">as ocasiões</span></h2>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-md-4">
+                        <img src="images/eventos/aniversario.jpg" alt="" class="d-block w-100 rounded mb-2">
+                        <h3 class="section-title text-colored fs-4">
+                            <i class="bi bi-calendar-heart-fill"></i>
+                            Aniversários
+                        </h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem quae cum magni iste saepe accusamus nisi vitae amet modi ea voluptatum, corrupti eligendi? Provident, enim veritatis libero repellat rem consequuntur.
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="images/eventos/casamento.jpg" alt="" class="d-block w-100 rounded mb-2">
+                        <h3 class="section-title text-colored fs-4">
+                            <i class="bi bi-arrow-through-heart-fill"></i>
+                            Recepções para casamento
+                        </h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem quae cum magni iste saepe accusamus nisi vitae amet modi ea voluptatum, corrupti eligendi? Provident, enim veritatis libero repellat rem consequuntur.
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="images/eventos/confraternizacoes.jpg" alt="" class="d-block w-100 rounded mb-2">
+                        <h3 class="section-title text-colored fs-4">
+                            <i class="bi bi-people-fill"></i>
+                            Confraternizações
+                        </h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem quae cum magni iste saepe accusamus nisi vitae amet modi ea voluptatum, corrupti eligendi? Provident, enim veritatis libero repellat rem consequuntur.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="cardapio">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center">
+                        Nosso <span class="text-colored">cardápio</span>
+                    </h2>
+                </div>
+                <div class="row">
+                    <aside class="col-md-2">
+                        <nav class="nav nav-pills flex-column nav-cardapio">
+                            <button type="button" data-bs-toggle="tab" tada-bs-target="#bebidas-sem-alcool" class="fw-bold text-start nav-link text-colored active">Bebidas não alcoólicas</button>
+                            <button type="button" data-bs-toggle="tab" tada-bs-target="#bebidas-alcoolicas" class="fw-bold text-start nav-link text-colored">Bebidas alcoólicas</button>
+                            <button type="button" data-bs-toggle="tab" tada-bs-target="#entradas" class="fw-bold text-start nav-link text-colored">Entradas</button>
+                            <button type="button" data-bs-toggle="tab" tada-bs-target="#pratos-principais" class="fw-bold text-start nav-link text-colored">Pratos principais</button>
+                            <button type="button" data-bs-toggle="tab" tada-bs-target="#sobremesas" class="fw-bold text-start nav-link text-colored">Sobremesas</button>
+                        </nav>
+                    </aside>
+                    <div class="col-md-10">
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="bebidas-sem-alcool">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/cardapio/bebidas/coca-cola.jpg" alt="Coca-cola" />
+                                        <h5 class="text-colored fw-bold mt-2">Coca-Cola</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/cardapio/bebidas/suco.jpg" alt="Suco" />
+                                        <h5 class="text-colored fw-bold mt-2">Suco de laranja</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/cardapio/bebidas/coca-cola.jpg" alt="Coca-cola" />
+                                        <h5 class="text-colored fw-bold mt-2">Coca-Cola</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/cardapio/bebidas/coca-cola.jpg" alt="Coca-cola" />
+                                        <h5 class="text-colored fw-bold mt-2">Coca-Cola</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/cardapio/bebidas/coca-cola.jpg" alt="Coca-cola" />
+                                        <h5 class="text-colored fw-bold mt-2">Coca-Cola</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/cardapio/bebidas/coca-cola.jpg" alt="Coca-cola" />
+                                        <h5 class="text-colored fw-bold mt-2">Coca-Cola</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="bebidas-alcoolicas">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/cardapio/bebidas/cerveja.jpg" alt="Cerveja" />
+                                        <h5 class="text-colored fw-bold mt-2">Cerveja</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/cardapio/bebidas/vinho.jpg" alt="Vinho" />
+                                        <h5 class="text-colored fw-bold mt-2">Vinho</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
